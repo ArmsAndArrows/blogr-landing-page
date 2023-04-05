@@ -1,0 +1,98 @@
+.mobile {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    height: 90%;
+    border-radius: 1rem;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    align-content: start;
+    gap: 1rem;
+    text-align: center;
+    background-color: $color-white;
+    box-shadow: 0.5rem 1.5rem 2rem rgba(black, 0.5);
+    display: none;
+    animation: opaque 0.2s linear;
+
+    &__active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        grid-column: 2;
+        margin-top: 13%;
+    }
+    &__list {
+        list-style-type: none;
+        margin: 2rem;
+        padding: 2rem 0 2rem;
+        margin-top: 2rem;
+
+        display: none;
+        gap: 2rem;
+        background-color: $color-light-grayish-blue;
+        border-radius: 1rem;
+        &--active {
+            display: grid;
+            animation: opaque 0.2s ease-out;
+        }
+    }
+    &__name {
+        display: inline;
+        font-size: 1.6rem;
+        font-weight: $ft-med;
+    }
+    &__icon {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: $color-very-dark-grayish-blue;
+        background-color: $color-light-grayish-blue;
+        display: inline-block;
+        &:hover {
+            font-weight: $ft-semibold;
+        }
+    }
+    &__drop {
+        cursor: pointer;
+    }
+    &__register {
+        .btn--transp {
+            color: $color-very-dark-grayish-blue;
+            &:hover {
+                color: $color-light-grayish-blue;
+            }
+        }
+        .btn--solid {
+            color: $color-white;
+            border: 1px solid transparent;
+            background: linear-gradient(90deg, $color-light-red, $color-light-text-red);
+            transition: all 0.2s ease-out;
+
+            &:hover {
+                color: $color-white;
+                filter: brightness(120%);
+                border: 1px solid transparent;
+            }
+        }
+        display: flex;
+        gap: 1rem;
+
+        justify-self: end;
+        margin-bottom: 10%;
+        padding: 1rem;
+    }
+}
+
+.menu__icon {
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}

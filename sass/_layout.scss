@@ -1,0 +1,238 @@
+///FEATURES SECTION
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 28% 0 71%;
+    text-align: center;
+    @media only screen and (min-width: $bp-l) {
+        padding: 10.7% 0% 20%;
+        margin-bottom: 0%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__heading {
+        font-weight: $ft-bold;
+        @media only screen and (min-width: $bp-l) {
+            grid-column: 1/-1;
+        }
+    }
+    picture {
+        grid-column: 2;
+    }
+    &__logo {
+        padding-top: 11%;
+        max-width: 100%;
+
+        @media only screen and (min-width: $bp-xl) {
+            position: absolute;
+            right: -19%;
+            top: -8.5%;
+            max-width: 140%;
+        }
+    }
+}
+///ARTICLES
+///
+.articles {
+    @media only screen and (min-width: $bp-l) {
+        &:first-of-type {
+            grid-column: 1;
+            grid-row: 2;
+            align-self: start;
+            margin-top: 15%;
+            text-align: start;
+            margin-left: 23%;
+            margin-right: 2%;
+        }
+        &:nth-child(2) {
+            grid-column: 2;
+            margin-left: -1.5%;
+            text-align: start;
+            margin-right: 23%;
+        }
+    }
+}
+.article {
+    padding: 3.1rem 3.4rem 0;
+    @media only screen and (min-width: $bp-l) {
+        padding: 0;
+        &:nth-of-type(2) {
+            margin-top: 6rem;
+        }
+    }
+
+    &:nth-child(4) {
+        padding-top: 2.8rem;
+        @media only screen and (min-width: $bp-l) {
+        }
+    }
+
+    &__heading {
+        padding: 2rem;
+        @media only screen and (min-width: $bp-l) {
+            padding: 0;
+        }
+    }
+
+    &__paragraph {
+        padding-top: 0rem;
+        line-height: 2.75rem;
+        font-family: "Overpass", sans-serif;
+        font-size: 1.6rem;
+        color: $color-very-dark-grayish-blue;
+        @media only screen and (min-width: $bp-l) {
+            padding: 0;
+            font-size: 1.25rem;
+            padding-top: 1.6rem;
+            line-height: 2.2rem;
+        }
+    }
+}
+
+////CARD
+///
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60% 3rem 30%;
+    font-family: "Overpass", sans-serif;
+    color: $color-white;
+    background-image: url(../images/bg-pattern-circles.svg),
+        linear-gradient(180deg, $color-dark-gray-blue, $color-very-dark-desaturated-blue);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: 50% -350%;
+    border-radius: 0 10rem 0 10rem;
+    position: relative;
+
+    @media only screen and (min-width: $bp-l) {
+        padding: 0;
+        border-radius: 0 8rem 0 8rem;
+        background-image: url(../images/bg-pattern-circles.svg),
+            linear-gradient(90deg, $color-dark-gray-blue, $color-very-dark-desaturated-blue);
+        background-size: cover;
+        background-position: 0% 100%;
+    }
+    &__image {
+        position: absolute;
+
+        top: 0;
+        transform: translateY(-46%);
+        @media only screen and (min-width: $bp-l) {
+            transform: translateY(0%);
+            left: 8.5%;
+            top: -17%;
+            max-width: 40%;
+            z-index: 1;
+        }
+        @media only screen and (min-width: $bp-el) {
+            transform: translateY(0%);
+            left: 8.5%;
+            top: -17%;
+            max-width: 100%;
+            z-index: 1;
+        }
+    }
+
+    &__text {
+        @media only screen and (min-width: $bp-l) {
+            text-align: start;
+            margin-left: 51%;
+            padding-top: 7.5%;
+            margin-right: 10%;
+            padding-bottom: 6.5%;
+            overflow: hidden;
+            position: relative;
+        }
+    }
+    &__heading {
+        padding-top: 1rem;
+        font-size: 3.6rem;
+        line-height: 1.25;
+        @media only screen and (min-width: $bp-l) {
+            font-size: 2.8rem;
+        }
+    }
+    &__paragraph {
+        color: $color-light-grayish-blue;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        padding-top: 2rem;
+        line-height: 1.9;
+        font-weight: $ft-light;
+        @media only screen and (min-width: $bp-l) {
+            font-size: 1.2rem;
+            padding-top: 1.8rem;
+        }
+    }
+}
+
+///Credits
+.credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5.5% 0 24.5%;
+    text-align: center;
+    &__img {
+        padding-top: 11%;
+        max-width: 100%;
+        @media only screen and (min-width: $bp-l) {
+            position: absolute;
+            left: -19.5%;
+            top: 4%;
+            max-width: 70%;
+        }
+        @media only screen and (min-width: $bp-xl) {
+            position: absolute;
+            left: -19.5%;
+            top: -4%;
+            max-width: 140%;
+        }
+    }
+    picture {
+        grid-column: 1;
+    }
+
+    @media only screen and (min-width: $bp-l) {
+        padding: 10.7% 0% 22.2%;
+        margin-bottom: 0%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr auto;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.credit {
+    &:nth-of-type(2) > &__heading {
+        padding-top: 5rem;
+    }
+    padding: 0 2rem;
+    &__heading {
+        padding-top: 4rem;
+    }
+    &__paragraph {
+        padding: 1.6rem 0 0;
+        font-size: 1.6rem;
+        color: $color-very-dark-grayish-blue;
+
+        font-weight: $ft-reg;
+        line-height: 1.75;
+        @media only screen and (min-width: $bp-l) {
+            font-size: 1.25rem;
+        }
+    }
+}

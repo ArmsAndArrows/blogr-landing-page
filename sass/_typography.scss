@@ -1,0 +1,44 @@
+//HEADINGS
+
+.heading-first,
+.heading-second,
+.heading-third {
+    font-family: "Overpass", sans-serif;
+    color: $color-very-dark-black-blue;
+}
+
+.heading-first {
+    color: $color-white;
+    font-size: 3.4rem;
+    font-weight: $ft-reg;
+    @media only screen and (min-width: $bp-l) {
+        font-size: 4.7rem;
+    }
+}
+
+.heading-second {
+    font-size: 2.7rem;
+    @media only screen and (min-width: $bp-l) {
+        font-size: 3rem;
+    }
+}
+
+.heading-third {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: $ft-semibold;
+    @media only screen and (min-width: $bp-l) {
+        font-size: 2.15rem;
+        font-weight: $ft-semibold;
+    }
+}
+
+.heading-fourth {
+    color: $color-white;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    font-weight: $ft-reg;
+    @media only screen and (min-width: $bp-l) {
+        font-size: 1.2rem;
+    }
+}
