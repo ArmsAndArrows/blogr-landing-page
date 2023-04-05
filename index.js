@@ -7,7 +7,7 @@ dropdowns.forEach((dropdown) => {
   const dropdownList = dropdown.querySelector(".dropdown__list");
   const dropdownIcon = dropdown.querySelector(".dropdown__icon");
 
-  dropdownName.addEventListener("click", () => {
+  dropdown.addEventListener("click", () => {
     // Close all other dropdowns
     dropdowns.forEach((otherDropdown) => {
       if (otherDropdown !== dropdown) {
