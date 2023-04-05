@@ -42,9 +42,9 @@ const hamburger = document.querySelector(".header__hamburger");
 hamburger.addEventListener("click", function () {
   mobile.classList.toggle("mobile__active");
   if (mobile.classList.contains("mobile__active")) {
-    hamburger.src = "/images/icon-close.svg";
+    hamburger.src = "./images/icon-close.svg";
   } else {
-    hamburger.src = "/images/icon-hamburger.svg";
+    hamburger.src = "./images/icon-hamburger.svg";
   }
 });
 
